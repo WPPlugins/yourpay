@@ -1,0 +1,48 @@
+.yourpayoverlay.cover {
+    position:fixed; 
+    top:0; 
+    left:0; 
+    background:rgba(0,0,0,0.6); 
+    z-index:999997; 
+    width:100%; 
+    height:100%; 
+}
+.yourpay.iframeview {
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    margin-left: -25%;
+    width: 50%;
+    height: -moz-calc(100% - 40px);
+    height: -webkit-calc(100% - 40px);
+    height: calc(100% - 40px);
+    z-index: 999998;
+    background:rgba(255,255,255,255);
+    border-radius: 25px;
+    overflow: hidden;
+}
+.yourpay.closebutton {
+    position: fixed;
+    z-index: 999999;
+    top: 16px;    
+    left: 50%;
+}
+
+.yourpay.iframeview iframe  {
+    width:  100%;
+    height: 100%;
+    border: 0;
+}    
+    
+@media only screen 
+and (max-width : 770px) {
+    .yourpay.iframeview {
+        top: 0px;
+        left: 0%;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .yourpay.closebutton {
+        display: none;
+    }    
+}

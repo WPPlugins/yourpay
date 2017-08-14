@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 27, 2017, 1:03:16 AM
+    Author     : mag
+*/
+.yourpay.grayedout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    z-index: 999999;
+    opacity: 0.8;
+}
+.yourpay.outer {
+    z-index: 1000000;    
+    -webkit-box-shadow:0 0 20px gray; 
+    -moz-box-shadow: 0 0 20px gray; 
+    box-shadow:0 0 20px gray;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+}
+
+.yourpay.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.yourpay.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+}
+
+.yourpay.setup {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.yourpay.setup-start {
+    position: relative;
+    width: 40%;
+    background: #FFF;
+    float: left;
+    min-height: 400px;
+    vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 5%;
+}
+
+.update-nag {
+    display: none;
+}
